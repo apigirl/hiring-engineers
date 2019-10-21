@@ -19,12 +19,12 @@ Don’t forget to read the [References](https://github.com/jeremy-lq/hiring-engi
 
 ## Prerequisites - Setup the environment
 
+[Sign up for Datadog](https://app.datadoghq.com/signup) (use “Datadog Recruiting Candidate” in the “Company” field), and get the Agent reporting metrics from your local machine.
+
 You can utilize [any OS/host](https://app.datadoghq.com/account/settings#agent) to complete this exercise. However, we recommend one of the following approaches:
 
 * Spin up a fresh Linux VM via Vagrant or other tools so that you don’t run into any OS or dependency issues. [Here are instructions](https://github.com/jeremy-lq/hiring-engineers/blob/tech-writer/README.md#vagrant) for setting up a Vagrant Ubuntu LTS VM.
 * You can utilize a Containerized approach with Docker for Linux and our dockerized Datadog Agent image.
-
-Then, [sign up for Datadog](https://app.datadoghq.com/signup) (use “Datadog Recruiting Candidate” in the “Company” field), and get the Agent reporting metrics from your local machine.
 
 ## Collecting Metrics:
 
@@ -36,16 +36,16 @@ Then, [sign up for Datadog](https://app.datadoghq.com/signup) (use “Datadog Re
 
 ## Visualizing Data:
 
-Utilize the Datadog API to create a Timeboard that contains:
+Utilize the Datadog API to create a Dashboard that contains:
 
 * Your custom metric scoped over your host.
 * Any metric from the Integration on your Database with the anomaly function applied.
 
-Please be sure, when submitting your hiring challenge, to include the script that you've used to create this Timemboard.
+Please be sure, when submitting your hiring challenge, to include the script that you've used to create this Dashboard.
 
 Once this is created, access the Dashboard from your Dashboard List in the UI:
 
-* Set the Timeboard's timeframe to the past 5 minutes
+* Set the Dashboard's timeframe to the past 5 minutes
 * Take a snapshot of this graph and use the @ notation to send it to yourself.
 * **Bonus Question**: What is the Anomaly graph displaying?
 
